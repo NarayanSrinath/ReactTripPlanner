@@ -1,0 +1,121 @@
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: white; /* Light Blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.inner-container {
+  width: 96vw;
+  height: 96vh;
+
+
+  position: relative; /* Allows absolute positioning inside */
+  background-color: #D4F1F4 !important; /* Force Light Blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section (Text + Image) */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  padding: 50px 0;
+}
+
+/* Text Section */
+.text-section {
+  width: 50%;
+  text-align: left;
+  white-space: pre-line; /* Ensures line breaks work */
+}
+
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: pre-wrap; /* Preserve formatting & line breaks */
+}
+
+/* Bold First Line */
+.bold-text {
+  font-size: 40px;
+  font-weight: bold;
+  color: #001f3f;
+}
+
+/* Normal Text (Other Lines) */
+.normal-text {
+  font-size: 20px;
+  font-weight: normal;
+  color: #001f3f;
+}
+
+/* Cursor Styling */
+.cursor {
+  font-size: 34px; /* Increased cursor size */
+  font-weight: bold;
+  color: #001f3f;
+  animation: blinkCursor 0.5s infinite;
+}
+
+/* Initial Blinking Cursor */
+.initial-cursor {
+  font-size: 34px;
+  font-weight: bold;
+  color: #001f3f;
+  animation: blinkCursor 0.6s step-end infinite;
+}
+
+
+/* Hide cursor at end */
+@keyframes blinkCursor {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Image Section */
+.image-section {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+/* Background Pattern */
+.bg-pattern {
+  position: absolute;
+  top: -90px;
+  right:   -20px;
+  width: 800px; /* Matches SVG width */
+  height: 200px;
+  z-index: 1;
+  opacity: 0.3; /* Optional transparency */
+}
+
+
+/* SVG Avatar */
+.avatar {
+  width: 350px;
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+/* Scroll Indicator */
+.scroll-text {
+  margin-top: 40px;
+  font-size: 14px;
+  color: gray;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

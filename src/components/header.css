@@ -1,0 +1,63 @@
+.header {
+    position: absolute; /* Fix it to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width inside inner-container */
+    padding: 20px 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .triangle-logo {
+    margin-right: 15px;
+  }
+  
+  .menu-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #001f3f;
+    margin-left: 10px;
+    letter-spacing: 2px;
+  }
+  
+  .menu-divider {
+    width: 2px;
+    height: 20px;
+    background-color: #001f3f;
+    opacity: 0.7;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hire-me {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .hire-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #001f3f;
+    margin-left: 8px;
+    letter-spacing: 2px;
+  }
+  
